@@ -1,0 +1,47 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a consistent font family */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f1f8f4; /* Light greenish background */
+  color: #333;
+  font-size: 16px;
+}
+
+/* Root container styles */
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa; /* Light background for the entire page */
+}
+
+/* Make sure buttons and links have consistent styles */
+button, a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:focus, a:focus {
+  outline: none;
+}
+
+input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Optional: Add smooth transitions for hover effects */
+button, nav a {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover, nav a:hover {
+  transform: scale(1.05);
+}

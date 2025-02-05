@@ -1,0 +1,68 @@
+/* General Container Styles */
+div {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Heading Styles */
+h2 {
+    text-align: center;
+    color: #2c6b2f; /* Greenish color for headings */
+}
+
+/* Product List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f1f8f4; /* Light greenish background */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Name, Category, and Price Styling */
+span {
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+}
+
+/* Button and Link Styling */
+button {
+    background-color: #e53e3e; /* Red color for delete */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c53030; /* Darker red on hover */
+}
+
+a {
+    color: #3182ce; /* Blue color for links */
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Empty List Message */
+p {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+}

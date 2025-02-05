@@ -1,0 +1,29 @@
+/* Container Styles */
+div {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9fafb; /* Light background */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styles */
+h2 {
+    text-align: center;
+    color: #2c6b2f; /* Greenish color for headings */
+    margin-bottom: 20px;
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Add extra spacing between paragraphs */
+p + p {
+    margin-top: 15px;
+}

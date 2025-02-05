@@ -1,0 +1,81 @@
+/* General Layout and Container Styles */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navigation Bar Styling */
+nav {
+  background-color: #2c6b2f; /* Greenish background */
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #f9fafb; /* Lighter text color on hover */
+}
+
+/* Page Heading Styles */
+h1 {
+  text-align: center;
+  color: #2c6b2f; /* Greenish color */
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #2c6b2f; /* Greenish background */
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* About and Contact Page Styling */
+.about-container, .contact-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f9fafb; /* Light background */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-container h2, .contact-container h2 {
+  text-align: center;
+  color: #2c6b2f; /* Greenish color for headings */
+  margin-bottom: 20px;
+}
+
+.about-container p, .contact-container p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Add extra spacing between paragraphs */
+.about-container p + p, .contact-container p + p {
+  margin-top: 15px;
+}
+
+/* Add some space around contact info */
+.contact-container p {
+  margin-bottom: 10px;
+}
