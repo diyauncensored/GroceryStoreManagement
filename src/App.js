@@ -2,34 +2,38 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import ProductList from "./components/ProductList";
 import AddProduct from "./components/AddProduct";
 import EditProduct from "./components/EditProduct";
-import About from "./components/About"; // New About page component
-import Contact from "./components/Contact"; // New Contact page component
-import Footer from "./components/Footer"; // New Footer component
+import About from "./components/About"; 
+import Footer from "./components/Footer"; 
+import Chatbot from "./components/Chatbot";  // Import Chatbot component
 import "./App.css";
 
 function App() {
     return (
         <Router>
-            <nav>
-                <Link to="/">Home</Link> | 
-                <Link to="/products">Products</Link> | 
-                <Link to="/add-product">Add Product</Link> | 
-                <Link to="/about">About</Link> |  {/* New About page link */}
-                <Link to="/contact">Contact</Link>  {/* New Contact page link */}
-            </nav>
+            <header>
+                <nav>
+                    <ul>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/products">Products</Link></li>
+                        <li><Link to="/add-product">Add Product</Link></li>
+                        <li><Link to="/about">About</Link></li>
+                    </ul>
+                </nav>
+            </header>
 
             <div className="container">
                 <Routes>
-                    <Route path="/" element={<h1>Welcome to Grocery Store Management System</h1>} />
+                    <Route path="/" element={<h1>Grocery Store Inventory</h1>} />
                     <Route path="/products" element={<ProductList />} />
                     <Route path="/add-product" element={<AddProduct />} />
                     <Route path="/edit-product/:id" element={<EditProduct />} />
-                    <Route path="/about" element={<About />} />  {/* New About page route */}
-                    <Route path="/contact" element={<Contact />} />  {/* New Contact page route */}
+                    <Route path="/about" element={<About />} />
                 </Routes>
             </div>
 
-            <Footer /> {/* Footer to be displayed on all pages */}
+            <Chatbot />  {/* Add Chatbot Component */}
+
+            <Footer />
         </Router>
     );
 }
