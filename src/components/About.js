@@ -5,8 +5,8 @@ function About() {
     return (
         <div className="about-container">
             <h2>About Us</h2>
-            <p>Welcome to our Grocery Store Management System. This platform helps you efficiently manage products, stock levels, and prices for your grocery store.</p>
-            <p>Our goal is to make grocery store management easy and intuitive. Thank you for choosing us!</p>
+            <p>Done by Diya Nandana and Sankeerth P, Students of W1 section. </p>
+            <p>Under the Guidance of Ms. Susheela</p>
         </div>
     );
 }
